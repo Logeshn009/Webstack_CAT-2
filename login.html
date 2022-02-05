@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Registration Form | Gateways 2022</title>
+    <link rel="stylesheet" href="registration.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Login</span></div>
+        <!-- form tag -->
+        <form action="registration.html">
+          <!-- First name -->
+          <div class="row">
+            <i class="fas fa-user-circle"></i>
+            <input type="text" placeholder="User Name" id="fname" required />
+            <span></span>
+          </div>
+          <br />
+          <!-- set password -->
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              required
+            /><span></span>
+          </div>
+          <br />
+          <!-- Register button -->
+          <div class="row button">
+            <input type="submit" value="Login" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var fname = document.getElementById("fname");
+  var password = document.getElementById("password");
+  var span = document.getElementsByTagName("span");
+  fname.onkeydown = function () {
+    const regexname1 = /^[A-Z]+(\s[a-zA-Z]+)+?$/;
+    if (regexname1.test(fname.value)) {
+      span[1].innerText = "Your Name is Valid";
+      span[1].style.color = "green";
+    } else {
+      span[1].innerText = "Enter only Alphabetic characters";
+      span[1].style.color = "red";
+    }
+  };
+  password.onkeydown = function () {
+    const regxpsw =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+    if (regxpsw.test(password.value)) {
+      span[4].innerText = "Valid password";
+      span[4].style.color = "green";
+    } else {
+      span[4].innerText = "Invalid Password";
+      span[4].style.color = "red";
+    }
+  };
+  function myFunction() {
+    alert("Logged IN!");
+  }
+</script>

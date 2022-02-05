@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <christ>
+      <computer-science>
+            <STU-NAME>Logesh N</STU-NAME>
+            <STU-UNIVERSITY>Christ University</STU-UNIVERSITY>
+            <STU-PHONE>9629308242</STU-PHONE>
+            <STU-EMAIL>logesh.n@christuniversity.in</STU-EMAIL>
+      </computer-science>
+      <computer-science>
+        <STU-NAME>Vignesh M</STU-NAME>
+        <STU-UNIVERSITY>Christ University</STU-UNIVERSITY>
+        <STU-PHONE>9629222422</STU-PHONE>
+        <STU-EMAIL>vignesh.m@christuniversity.in</STU-EMAIL>
+      </computer-science>
+        <computer-science>
+        <STU-NAME>Ganesh Kumar M</STU-NAME>
+        <STU-UNIVERSITY>Christ University</STU-UNIVERSITY>
+        <STU-PHONE>9629308232</STU-PHONE>
+        <STU-EMAIL>ganesh.kumar@christuniversity.in</STU-EMAIL>
+      </computer-science>
+ </christ>
+ 
